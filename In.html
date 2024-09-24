@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AirDropper Clicker</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #airdropper {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        cursor: pointer;
+    }
+    #token {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div id="airdropper">Click Me!</div>
+<p id="token">Tokens: 0</p>
+
+<script>
+    let tokens = 0;
+    const airdropper = document.getElementById('airdropper');
+    const tokenElement = document.getElementById('token');
+
+    airdropper.addEventListener('click', () => {
+        tokens++;
+        tokenElement.textContent = Tokens: ${tokens};
+    });
+</script>
+
+</body>
+</html>
